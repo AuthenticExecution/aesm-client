@@ -1,0 +1,12 @@
+[package]
+name = "aesm_client"
+version = "0.1.0"
+authors = ["Gianluca Scopelliti <gianluca.scopelliti@ericsson.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ctrlc = "3.1.8"
+
+sgx_attestation = { git = "https://github.com/AuthenticExecution/rust-sgx-libs.git", features = ["client"] }
